@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: local('Harmonia Sans Regular'), local('Harmonia-Sans-Regular'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Regular.woff') format('woff'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: local('Harmonia Sans Bold'), local('Harmonia-Sans-Bold'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Bold.woff') format('woff'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: local('Harmonia Sans Light'), local('Harmonia-Sans-Light'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Light.woff2') format('woff2'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Light.woff') format('woff'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmonia Sans';
+    src: local('Harmonia Sans Bold Italic'), local('Harmonia-Sans-Bold-Italic'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-BoldIt.woff2') format('woff2'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-BoldIt.woff') format('woff'),
+    url('./assets/fonts/Harmonia/HarmoniaSansProCyr-BoldIt.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+body {
+    font-family: 'Harmonia Sans', serif;
+    font-size: 16px;
+}
+
+.navigation {
+    width: 100%;
+    height: 122px;
+    background-image: url('./assets/images/nav/navigate.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 15px;
+}
+
+.wrapper {
+    max-width: 388px;
+    padding: 0 15px;
+    margin: auto;
 }
