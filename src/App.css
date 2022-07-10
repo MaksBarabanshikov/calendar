@@ -3,3 +3,5 @@
 h1 { @apply text-center font-bold italic text-lg; }
 
 .gray-text { @apply text-center text-xs text-gray-black }
+
+.calendar__date.active { @apply bg-purple rounded transition text-white }

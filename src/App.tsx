@@ -3,6 +3,7 @@ import './App.css';
 import Routing from "./Components/Router/Router";
 import Navigation from "./Components/Navigation";
 import moment from "moment";
+import 'moment/locale/ru'
 
 declare global {
     interface Window {
@@ -12,8 +13,10 @@ declare global {
 
 function App() {
 
+    const __months = moment.months().map(m => m.charAt(0).toUpperCase() + m.slice(1))
+    moment.updateLocale('ru', {week: {dow: 1}, months: __months})
+
     useEffect(() => {
-        window.moment = moment
         window.Telegram.WebApp.ready()
     },[])
 
