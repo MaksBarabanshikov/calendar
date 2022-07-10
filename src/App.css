@@ -1,4 +1,4 @@
-button { @apply text-base font-bold text-white text-center w-full py-3 bg-purple rounded-lg mb-4 }
+.button { @apply text-base font-bold text-white text-center w-full py-3 bg-purple rounded-lg mb-4 }
 
 h1 { @apply text-center font-bold italic text-lg; }
 

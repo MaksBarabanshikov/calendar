@@ -1,14 +1,16 @@
 import React, {ReactElement} from 'react';
 import Avatar from "../../Components/Avatar";
-import Button from "../../Components/Button";
 import UpcomingDates from "./UpcomingDates/UpcomingDates";
+import {useNavigate} from "react-router-dom";
+import ButtonLink from "../../Components/ButtonLink";
 
 function MyNotes() {
     const text: ReactElement = <span>Записаться на консультацию</span>
+    const navigate = useNavigate()
     return (
         <div className="pt-24 m-auto">
             <Avatar/>
-            <Button children={text}></Button>
+            <ButtonLink to={'/consultation'} children={text}></ButtonLink>
             <UpcomingDates/>
         </div>
     );
